@@ -1,0 +1,83 @@
+/* Reset dasar */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; background:#f6f6f6; }
+
+/* Header / Hero */
+.hero {
+  background: linear-gradient(180deg, #2f2f2f, #333333);
+  color: #fff;
+  padding: 48px 20px 36px;
+  text-align: center;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.2) inset;
+}
+.hero-inner { max-width: 980px; margin: 0 auto; }
+.hero h1 { font-size: 32px; margin-bottom: 18px; font-weight: 700; letter-spacing: .5px; }
+
+/* Search */
+.search-wrap { display:flex; justify-content:center; }
+#search {
+  width: 420px;
+  max-width: calc(100% - 40px);
+  padding: 10px 14px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+/* Main container */
+.container { max-width: 1200px; margin: 28px auto; padding: 0 20px; }
+
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+/* Card style */
+.card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(30,30,30,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+.card .thumb {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+.card .card-body { padding: 14px; flex: 1; display:flex; flex-direction:column; }
+.card h3 { font-size: 15px; margin-bottom: 8px; color:#222; }
+.card p { font-size: 13px; color:#444; line-height:1.45; flex:1; }
+
+/* Accent smaller title above */
+.card .title-top {
+  font-weight:700;
+  font-size: 13px;
+  margin-bottom:6px;
+  color:#2b2b2b;
+}
+
+/* Footer strip */
+.site-footer {
+  background:#222;
+  color:#e6e6e6;
+  text-align:center;
+  padding:12px 10px;
+  margin-top:28px;
+  font-size:13px;
+}
+
+/* Responsive tweaks */
+@media (max-width:600px) {
+  .hero { padding:32px 12px; }
+  .hero h1 { font-size:22px; }
+  #search { width: 100%; }
+}
