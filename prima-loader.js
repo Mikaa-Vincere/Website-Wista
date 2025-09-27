@@ -9,7 +9,7 @@
   }
   var text;
   try { text = b64DecodeUnicode(b64); }
-  catch(e) { text = "© 2025 Wisata Jogja. Dibuat Oleh Prima."; }
+  catch(e) { text = "© 2025 Wisata Yogyakarta. Dibuat Oleh Prima."; }
 
   var footer = document.getElementById('siteFooter');
   if (footer) {
@@ -19,3 +19,4 @@
     footer.style.textAlign = "center";
   }
 })();
+
