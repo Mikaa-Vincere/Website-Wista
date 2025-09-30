@@ -29,7 +29,7 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
-    .btn-back {
+    .btn-back, .btn-order {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 18px;
@@ -40,7 +40,7 @@
       cursor: pointer;
       transition: background 0.3s;
     }
-    .btn-back:hover { background: #444; }
+    .btn-back:hover, .btn-order:hover { background: #444; }
 
     /* Overlay animasi keluar */
     .transition-overlay {
@@ -76,13 +76,18 @@
 </head>
 <body>
   <header>
-    <h1>Malioboro</h1>
+  <h1>Malioboro</h1>
   </header>
   <main>
-    <img src="Malioboro.jpg" alt="Malioboro">
-    <p>
-    Solo - Jalan Malioboro adalah salah satu daya tarik wisatawan Jogja. Jalan yang terletak tidak jauh dari Stasiun Tugu Jogja ini hampir setiap hari senantiasa dipadati oleh para pelancong dari berbagai daerah. Rupanya terdapat sejarah dan makna di balik nama Jalan Malioboro.
-    <a href="index.html" class="btn-back" id="backBtn">← Kembali</a>
+  <img src="Malioboro.jpg" alt="Malioboro">
+  <p>
+  Jalan Malioboro adalah ikon wisata belanja dan budaya di Yogyakarta. Jalan ini membentang dari Tugu Yogyakarta hingga ke kawasan Keraton, dan selalu ramai dikunjungi wisatawan. Di sepanjang jalan, terdapat pedagang kaki lima, toko batik, pusat oleh-oleh, hotel serta kuliner khas Jogja.
+  Suasana Malioboro sangat khas, terutama pada malanı hari, ketika lampu-lampu jalan menyala, seniman jalanan tampil, dan pedagang kuliner tradisional membuka lapak. Malioboro bukan hanya pusat perbelanjaan, tetapi juga menjadi simbol denyut nadi kehidupan Yogyakarta.
+  </p>
+  <a href="https://wa.me/6285738143182?text=Hallo,%20Saya%20Ingin%20Memesan%20Tiket:%0ANama Anda :%0AJumlah%20Tiket :%0ATempat%20Wisata :%20Malioboro%0APesan Buat Admin :" 
+  target="_blank" class="btn-order">Pesan Tiket</a>
+
+  <a href="index.html" class="btn-back" id="backBtn">← Kembali</a>
   </main>
 
   <!-- Overlay untuk animasi -->

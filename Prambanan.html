@@ -29,7 +29,7 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
-    .btn-back {
+    .btn-back, .btn-order {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 18px;
@@ -40,7 +40,7 @@
       cursor: pointer;
       transition: background 0.3s;
     }
-    .btn-back:hover { background: #444; }
+    .btn-back:hover, .btn-order:hover { background: #444; }
 
     /* Overlay animasi keluar */
     .transition-overlay {
@@ -81,10 +81,19 @@
   <main>
     <img src="CandiPrambanan.jpg" alt="Candi Prambanan">
     <p>
-      Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia
-      dan merupakan salah satu warisan dunia UNESCO. Dibangun pada abad
-      ke-9, candi ini didedikasikan untuk Trimurti: Brahma, Wisnu, dan Siwa.
+      Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia yang dibangun pada abad ke-9 Masehi oleh Raja Rakai Pikatan dari Dinasti Sanjaya. 
+      Candi ini didedikasikan untuk Trimurti, yaitu tiga dewa utama dalam agama Hindu: Brahma (Pencipta), Wisnu (Pemelihara), dan Siwa (Pemusnah).
+      Kompleks ini terdiri dari sekitar 240 candi, dengan Candi Siwa sebagai bangunan utama setinggi 47 meter. 
+      Relief pada dinding candi menggambarkan kisah Ramayana dan Kresnayana, yang sekaligus menjadi warisan budaya. 
+      Pada tahun 1991, UNESCO menetapkannya sebagai Situs Warisan Dunia.
+      Hingga kini, Candi Prambanan masih menjadi pusat spiritual, kebudayaan, dan pariwisata di Yogyakarta.
     </p>
+
+    <!-- Tombol Pesan Tiket -->
+    <a href="https://wa.me/6285738143182?text=Hallo,%20Saya%20Ingin%20Memesan%20Tiket:%0ANama :%20Masukan Nama Anda%0AJumlah%20Tiket :%0ATempat%20Wisata :%20Candi%20Prambanan%0APesan Buat Admin :" 
+       target="_blank" class="btn-order">Pesan Tiket</a>
+
+    <!-- Tombol Kembali -->
     <a href="index.html" class="btn-back" id="backBtn">← Kembali</a>
   </main>
 
